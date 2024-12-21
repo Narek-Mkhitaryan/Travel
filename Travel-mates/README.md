@@ -1,41 +1,29 @@
 <h2 align="center">travelmates by Django</h2>
 
-Социальная сеть на Django Rest Framework.
+### Development Tools
+## Start
 
-**Ссылки**:
-- [YouTube](https://www.youtube.com/playlist?list=PLF-NY6ldwAWqSxUpnTBObEP21cFQxNJ7C)
-- [Telegram](https://t.me/trueDjangoChannel)
-- [Группа в VK](https://vk.com/djangochannel)
-### Инструменты разработки
-
-**Стек:**
-- Python >= 3.8
-- Django Rest Framework
-- Postgres
-
-## Старт
-
-#### 1) Создать образ
+#### 1) Create an image
 
     docker-compose build
 
-##### 2) Запустить контейнер
+##### 2) Run the container
 
     docker-compose up
     
-##### 3) Перейти по адресу
+##### 3) Go to the following address
 
     http://127.0.0.1:8000/api/v1/swagger/
 
-## Разработка с Docker
+## Development with Docker
 
-##### 1) Сделать форк репозитория
+##### 1) Fork the repository
 
-##### 2) Клонировать репозиторий
+##### 2) Clone the repository
 
-    git clone ссылка_сгенерированная_в_вашем_репозитории
+    git clone <your_generated_repository_link>
 
-##### 3) В корне проекта создать .env.dev
+##### 3) Create .env.dev in the root of the project
 
     DEBUG=1
     SECRET_KEY=fdsadqw3f32wg<43g3hv$%#@%F$F$$F$F
@@ -59,28 +47,18 @@
     EMAIL_HOST_PASSWORD=pass
     EMAIL_PORT=587
     
-##### 4) Создать образ
+##### 4) Create an image
 
     docker-compose build
 
-##### 5) Запустить контейнер
+##### 5) Run the container
 
     docker-compose up
     
-##### 6) Создать суперюзера
+##### 6) Create a superuser
 
     docker exec -it travelmate_travelmate_back_1 python manage.py createsuperuser
                                                         
-##### 7) Если нужно очистить БД
+##### 7) If you need to clear the database
 
     docker-compose down -v
- 
-## License
-
-[BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)
-
-Copyright (c) 2020-present, DJWOMS - Omelchenko Michael
-
-
-
-
